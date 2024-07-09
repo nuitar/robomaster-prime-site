@@ -1,0 +1,60 @@
+site_name: WUT RM
+
+theme:
+  name: material
+
+  language: zh
+  features:
+    - navigation.tabs
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate 
+    - content.tabs.link
+  custom_dir: overrides
+
+  
+# 导航栏
+nav: 
+  - 主页: 'index.md'
+  - '培训体系':
+    - '22级':
+      - '电控组': 'tutorial/22级/电控组.md'
+      - '机械组': 'tutorial/22级/机械组.md'
+      - '算法组': 'tutorial/22级/算法组.md'
+        
+    - '23级':
+      - '课表': 'tutorial/23级/课表.md'
+      - '算法组':
+          - '大纲':  'tutorial/23级/算法/大纲.md'
+          - '作业':  'tutorial/23级/算法/作业.md'
+   
+        
+  - 关于:
+    - 'WUT RM': 'about/WUT_RM.md'
+  # - About: 'about.md' 
+    
+# extra_css:
+#   - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+# plugins:
+#   - optimize
